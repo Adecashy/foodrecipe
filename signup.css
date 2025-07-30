@@ -1,0 +1,133 @@
+@media only screen and (max-width: 600px) {
+    body{
+        width: 375px;
+        height: 702px;
+        position: relative;
+    }
+    .title-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 170px;
+        height: 69px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    .header{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .para{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    .input-field{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        top: 100px;
+        left: 30px;
+        width: 315px;
+        /* height: 81px; */
+    }
+    .email-input, .password-input, .name-input, .confirm-password-input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .password-input, .confirm-password-input, .email-input{
+        margin-top: 1rem;
+    }
+    .input-field label{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    .input-field input{
+        border: 1.5px solid #d9d9d9;
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+    .terms{
+        position: absolute;
+        top: 438px;
+        left: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    .tick-box img{
+        width: 15px;
+    }
+    .t-and-c{
+        color: #ff9c00;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .signup-btn{
+        position: absolute;
+        top: 490px;
+        left: 30px;
+        
+    }
+    .signup-btn button{
+        background: #129575;
+        color: #ffffff;
+        padding: 18px 105px;
+        /* width: 315px; */
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .signup-line{
+        position: absolute;
+        top: 570px;
+        left: 140px;
+        width: 195px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        font-size: 13px;
+        font-weight: 500;
+        color: #d9d9d9;
+    }
+    .social-icon{
+        position: absolute;
+        top: 610px;
+        left: 121px;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .google, .facebook{
+        width: 24px;
+        border: 0.1px solid;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: rgba(105, 105, 105, 0.1);
+    }
+    .google img{
+        width: 24px;
+    }
+    .final-bar{
+        position: absolute;
+        top: 696px;
+        left: 98px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .final-bar a{
+        text-decoration: none;
+        color: #ff9c00;
+    }
+}

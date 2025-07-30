@@ -1,0 +1,177 @@
+@media only screen and (max-width: 600px) {
+    body{
+        width: 375px;
+        height: 702px;
+        position: relative;
+    }
+    .title-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 195px;
+        height: 69px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    .hello{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .question{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+        color: rgba(169, 169, 169, 1);
+    }
+    .avi{
+        position: absolute;
+        top: 20px;
+        left: 308px;
+    }
+    .avi img{
+        width: 40px;
+    }
+    .search{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        text-align: center;
+    }
+    .search-input input{
+        width: 220px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1.3px solid rgba(169, 169, 169, 1);
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(169, 169, 169, 1);
+    }
+    .filter-btn button{
+        background: #129575;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .frame-8{
+        position: absolute;
+        top: 175px;
+        width: 375px;
+    }
+    .frame-9{
+        margin-left: 30px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .frame-9 button{
+        padding: 7px 20px;
+        border: none;
+        background: rgba(255, 255, 255, 1);
+        color: #129575;
+        border-radius: 10px;
+    }
+    .first-btn button{
+        background: #129575;
+        color: rgba(255, 255, 255, 1);
+    }
+    .dishes{
+        position: absolute;
+        top: 267px;
+        width: 375px;
+        /* border: 1px solid; */
+    }
+    .cards{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .card-1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .food-details-con{
+        position: relative;
+        background: rgba(217, 217, 217, 1);
+        width: 130px;
+        height: 166px;
+        border-radius: 12px;
+    }
+    .food-con{
+        position: absolute;
+        top: -35px;
+        left: 20px;
+    }
+    .food-title{
+        position: absolute;
+        left: 15px;
+        top: 80px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 100px;
+        text-align: center;
+    }
+    .time-taken{
+        position: absolute;
+        left: 8px;
+        top: 145px;
+        font-size: 11px;
+        font-weight: 400;
+        width: 40px;
+        text-align: center;
+    }
+    .bookmark{
+        position: absolute;
+        left: 100px;
+        top: 138px;
+        /* width: 24px; */
+        text-align: center;
+        background: #ffffff;
+        padding: 2px;
+        border-radius: 100%;
+    }
+    .recipe{
+        position: absolute;
+        top: 455px;
+        left: 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .frame-3{
+        position: absolute;
+        top: 500px;
+        width: 375px;
+    }
+    .recipe-cards{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .recipe-con{
+        position: relative;
+        background: rgba(217, 217, 217, 1);
+        width: 251px;
+        height: 127px;
+        border-radius: 12px;
+    }
+    .recipe-title{
+        position: absolute;
+        left: 5px;
+        top: 42px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+    .recipe-time{
+        
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="frame-2">
+        <div class="frame-2-icon">
+            <img src="./images/image 11.png" alt="">
+        </div>
+        <div class="frame-2-text">
+            <p>100k+ Premium Recipe</p>
+        </div>
+    </div>
+    <div class="mid-text">
+        <div class="header-title">
+            <h2>Get Cooking</h2>
+        </div>
+        <div class="caption">
+            <p>Simple way to find Tasty Recipe</p>
+        </div>
+    </div>
+    <div class="btn" id="btn">
+        <button>Start Cooking</button>
+    </div>
+
+    <script>
+        const btnEl = document.getElementById("btn")
+        const goToSignin = () =>{
+            window.location.href = "./signin.html"
+        }
+        btnEl.addEventListener("click", goToSignin)
+    </script>
+
+</body>
+</html>
