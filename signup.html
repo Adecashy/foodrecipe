@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="title-bar">
         <div class="header">Create an account</div>
@@ -14,19 +18,19 @@
     <div class="input-field">
         <div class="name-input">
             <label for="">Name</label>
-            <input type="text" placeholder="Enter Name">
+            <input id="name" type="text" placeholder="Enter Name">
         </div>
         <div class="email-input">
             <label for="">Email</label>
-            <input type="email" placeholder="Enter Email">
+            <input id="email" type="email" placeholder="Enter Email">
         </div>
         <div class="password-input">
             <label for="">Password</label>
-            <input type="password" placeholder="Enter Password">
+            <input id="password" type="password" placeholder="Enter Password">
         </div>
         <div class="confirm-password-input">
             <label for="">Confirm Password</label>
-            <input type="password" placeholder="Renter Password">
+            <input id="confirm-password" type="password" placeholder="Renter Password">
         </div>
     </div>
     <div class="terms">
@@ -37,8 +41,11 @@
             <p>Accept terms & Condition</p>
         </div>
     </div>
-    <div class="signup-btn">
-        <button><label>Sign Up</label><img src="./images/Arrow-Right.png" alt="" width="20px"></button>
+    <div class="signup-btn"  style="width: 100%; display: block;">
+        <button id="signup-btn">
+            <span>Sign Up</span>
+            <img src="./images/Arrow-Right.png" alt="" width="20px">
+        </button>
     </div>
     <div class="signup-line">
         Or Sign in With
@@ -54,5 +61,11 @@
     <div class="final-bar">
         <p>Already a member?<a href="./signin.html"> Sign in</a></p>
     </div>
+
+    <script src="./signup.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

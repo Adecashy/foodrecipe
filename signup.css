@@ -75,6 +75,12 @@
         left: 30px;
         
     }
+
+    
+    .signup-btn button:disabled{
+        cursor: not-allowed;
+        background-color: #2d5c508a;
+    }
     .signup-btn button{
         background: #129575;
         color: #ffffff;
