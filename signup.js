@@ -1,5 +1,5 @@
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 import { app } from "./firebase/firebaseConfig.js"
 import { getElement } from "./functins/utils.js"
 
@@ -28,10 +28,13 @@ const signup = async () => {
         if(userCredential.user){
             const newUser = {
                 name: nameEl.value,
-                email: emailEl.value
+                email: emailEl.value,
+                image: `https://avatar.iran.liara.run/username?username=${nameEl.value}`
             }
+            console.log()
 
-            const userDocRef = await addDoc(userColRef, newUser)
+            const userDocRef = doc(userColRef, userCredential.user.uid)
+            await setDoc(userDocRef, newUser)
             sendEmailVerification(userCredential.user)
             window.location.href = "./signin.html"
         }

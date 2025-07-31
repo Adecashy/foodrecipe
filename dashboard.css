@@ -141,7 +141,7 @@
         border-radius: 100%;
     }
     .recipe{
-        position: absolute;
+        /* position: absolute; */
         top: 455px;
         left: 30px;
         font-size: 16px;

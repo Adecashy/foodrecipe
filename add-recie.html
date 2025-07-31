@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    form {
+        border: 1px solid #999;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 4rem auto;
+        width: 85vw;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0;
+            gap: 0.5rem;
+
+            input,
+            textarea {
+                padding: .5rem 1rem;
+                border-radius: 5px;
+                border: solid #999 1px;
+            }
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            display: block;
+            width: 100%;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+        }
+
+        button:disabled{
+            background-color: #444;
+            cursor: not-allowed;
+        }
+    }
+
+    .lg{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
+        span{
+            color: #129575;
+        }
+        
+    }
+</style>
+
 <body>
-    <form>
+
+    <header>
+        <a href="./dashboard.html" class="lg">Dare<span>Sci0us</span> </a>
+    </header>
+    <form id="form-el">
         <div>
             <label for="">Name</label>
-            <input type="text" id="name" >
+            <input type="text" id="name">
         </div>
         <div>
             <label for="">Durati0n</label>
-            <input type="text" id="duration" >
+            <input type="text" id="duration">
         </div>
         <div>
             <label for="">Des</label>
             <textarea name="" id="description"></textarea>
         </div>
 
-        <button>Add Recipe</button>
+        <button id="add-recipe-btn">Add Recipe</button>
     </form>
+
+    <script src="./add-recie.js" type="module"></script>
 </body>
+
 </html>

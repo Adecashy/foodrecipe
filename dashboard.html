@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="title-bar">
-        <div class="hello">Hello Jega</div>
+        <div class="hello">Hello <span id="user-name">---</span></div>
         <div class="question">What are you cooking today</div>
     </div>
     <div class="avi">
-        <img src="./images/Avatar.png" alt="">
+        <img src="" alt="" id="user-image">
     </div>
     <div class="search">
         <div class="search-input">
@@ -37,70 +37,8 @@
         </div>
     </div>
     <div class="dishes">
-        <div class="cards">
-            <div class="card-1">
-                <div class="food-details-con">
-                    <div class="food-con">
-                        <img src="./images/food-1.png" alt="" width="90px">
-                    </div>
-                    <div class="food-title">
-                        Classic Greek Salad
-                    </div>
-                    <div class="time-taken">
-                        15mins
-                    </div>
-                    <div class="bookmark">
-                        <img src="./images/Inactive.png" alt="" width="16px">
-                    </div>
-                </div>
-            </div>
-            <div class="card-1">
-                <div class="food-details-con">
-                    <div class="food-con">
-                        <img src="./images/food-2.png" alt="" width="90px">
-                    </div>
-                    <div class="food-title">
-                        Crunchy Nut Coleslaw
-                    </div>
-                    <div class="time-taken">
-                        10mins
-                    </div>
-                    <div class="bookmark">
-                        <img src="./images/Inactive.png" alt="" width="16px">
-                    </div>
-                </div>
-            </div>
-            <div class="card-1">
-                <div class="food-details-con">
-                    <div class="food-con">
-                        <img src="./images/food-1.png" alt="" width="90px">
-                    </div>
-                    <div class="food-title">
-                        Classic Greek Salad
-                    </div>
-                    <div class="time-taken">
-                        15mins
-                    </div>
-                    <div class="bookmark">
-                        <img src="./images/Inactive.png" alt="" width="16px">
-                    </div>
-                </div>
-            </div>
-            <div class="card-1">
-                <div class="food-details-con">
-                    <div class="food-con">
-                        <img src="./images/food-1.png" alt="" width="90px">
-                    </div>
-                    <div class="food-title">
-                        Classic Greek Salad
-                    </div>
-                    <div class="time-taken">
-                        15mins
-                    </div>
-                    <div class="bookmark">
-                        <img src="./images/Inactive.png" alt="" width="16px">
-                    </div>
-                </div>
+        <div class="cards" id="recipe-cards">
+           
             </div>
         </div>
     </div>
@@ -124,5 +62,7 @@
     </div>
 
     <a href="./add-recie.html" style="background-color: green; color: white; padding: 1rem; bottom:0;">+</a>
+
+    <script src="./dashbard.js" type="module"></script>
 </body>
 </html>
